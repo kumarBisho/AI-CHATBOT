@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 from PyPDF2 import PdfReader
 import pandas as pd
-import numpy as np
+# import numpy as np
 
 load_dotenv()
 
