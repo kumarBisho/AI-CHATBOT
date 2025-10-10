@@ -8,13 +8,25 @@
 </head>
 <body>
   <div class="chat-container">
-    <h1>Groq AI Chatbot</h1>
+    <h1>AI Chatbot
+      <span><button id="theme-toggle">☀️</button></span>
+    </h1>
+    
+    <!-- File upload -->
+    <div class="upload-container">
+      <input id="file-input" type="file">
+      <button id="upload-btn">Upload File</button>
+      <p id="file-status"></p>
+    </div>
 
+    <!-- Chat box -->
     <div id="chat-box" class="chat-box"></div>
 
+    <!-- User input -->
     <div class="input-container">
       <input id="user-input" type="text" placeholder="Ask me anything..." />
       <button id="send-btn">Send</button>
+      <button id="clear-btn">Clear</button> 
     </div>
   </div>
 

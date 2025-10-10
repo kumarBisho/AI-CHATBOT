@@ -1,69 +1,138 @@
+
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 20px;
 }
 
 .chat-container {
-  background: white;
-  width: 400px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
   text-align: center;
-  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+#theme-toggle {
+  position: relative;
+  top: -10px;
+  right: -10vw;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.upload-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#file-input {
+  margin-right: 10px;
+}
+
+#upload-btn {
+  padding: 8px 10px;
+  /* border: none; */
+  /* background-color: #007bff; */
+  /* color: white; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#file-status {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: green;
 }
 
 .chat-box {
-  border: 1px solid #ddd;
-  border-radius: 8px;
   height: 400px;
-  padding: 10px;
   overflow-y: auto;
-  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
 }
 
-.message {
-  margin-bottom: 10px;
+.user-message {
+  color: blue;
+  margin: 5px 0;
 }
 
-.user {
-  text-align: right;
-  color: #2563eb;
-}
-
-.bot {
-  text-align: left;
-  color: #111827;
+.bot-message {
+  color: green;
+  margin: 5px 0;
 }
 
 .input-container {
   display: flex;
-  gap: 10px;
 }
 
-input {
+#user-input {
   flex: 1;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 5px 0 0 5px;
   border: 1px solid #ccc;
+  outline: none;
 }
 
-button {
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 8px;
+#send-btn {
   padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #1e40af;
+#send-btn:hover {
+  background-color: #0056b3;
+}
+
+#clear-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#clear-btn:hover {
+  background-color: #c82333;
+}
+
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+body.dark-mode .chat-container {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+body.dark-mode .chat-box {
+  background-color: #444;
+  border-color: #555;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #555;
+  color: #f0f0f0;
+  border: 1px solid #666;
 }
