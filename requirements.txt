@@ -2,7 +2,7 @@ Flask==3.0.3
 requests==2.32.3
 python-dotenv==1.0.1
 PyPDF2==3.0.1
-pandas==2.1.1
+pandas>=2.3
 
 # Optional / dev
 # gunicorn==20.1.0  # for running on Linux production servers
