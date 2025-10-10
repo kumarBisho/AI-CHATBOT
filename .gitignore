@@ -1,0 +1,19 @@
+.env
+__pycache__/
+*.pyc
+instance/
+venv/
+env/
+.Python
+build/
+dist/
+*.egg-info/
+.DS_Store
+.vscode/
+
+# Mac / Windows
+Thumbs.db
+desktop.ini
+
+# Node
+node_modules/
