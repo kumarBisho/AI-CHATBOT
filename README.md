@@ -1,5 +1,9 @@
 # ChatBot_using_gemini
 
+## Live Demo
+
+[Click here to try the chatbot live](https://ai-chatbot-1-0.onrender.com/)
+
 This is a small Flask app that forwards chat messages to the Groq API.
 
 ## Setup (Windows PowerShell)
