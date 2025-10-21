@@ -1,45 +1,100 @@
-# ChatBot_using_gemini
 
-This is a small Flask app that forwards chat messages to the Groq API.
+[**🟢 Live Demo**](https://ai-chatbot-1-0.onrender.com/)
+[![Groq Chatbot Banner](assets/input_ui_part1.png)](assets/input_ui_part1.png)
 
-## Setup (Windows PowerShell)
+# Groq AI Chatbot
 
-1. Create a virtual environment and activate it:
+An intelligent, file-aware chatbot built with Flask and Groq's Llama-3 model. Upload documents (PDF, TXT, CSV) and interact with an AI assistant that leverages your data for context-rich answers.
+
+---
+
+## 🚀 Features
+
+- **Conversational AI**: Powered by Groq's Llama-3.3-70B model for fast, accurate responses.
+- **File Upload**: Supports PDF, TXT, and CSV. Extracts text for context-aware chat.
+- **Modern UI**: Clean, responsive interface with light/dark mode toggle.
+- **Chat History**: Maintains context for multi-turn conversations.
+- **Easy Deployment**: Simple setup for local or cloud hosting.
+
+---
+
+## 🖥️ User Interface
+
+<p align="center">
+  <img src="assets/input_ui_part1.png" alt="Input UI Part 1" width="400" />
+  <img src="assets/input_ui_part2.png" alt="Input UI Part 2" width="400" />
+</p>
+<p align="center">
+  <img src="assets/output_ui_part1.png" alt="Output UI Part 1" width="400" />
+  <img src="assets/output_ui_part2.png" alt="Output UI Part 2" width="400" />
+</p>
+
+---
+
+## ⚡ Quickstart
+
+### 1. Clone & Setup
 
 ```powershell
+git clone https://github.com/kumarBisho/AI-CHATBOT.git
+cd AI-CHATBOT
 python -m venv .venv; .\.venv\Scripts\Activate.ps1
-```
-
-2. Install dependencies:
-
-```powershell
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file with your API key:
+### 2. Configure API Key
+
+Create a `.env` file in the project root:
 
 ```
 API_KEY=your_groq_api_key_here
 ```
 
-4. Run the app:
+### 3. Run Locally
 
 ```powershell
 python app.py
 ```
 
-## Push to GitHub
+Visit [http://localhost:5000](http://localhost:5000) in your browser.
 
-```powershell
-git init
-git add .
-git commit -m "Initial commit"
-# create a repo on GitHub and then:
-git remote add origin https://github.com/<your-username>/<repo>.git
-git branch -M main
-git push -u origin main
-```
+---
 
-Notes:
-- `.env` is ignored by `.gitignore` to avoid leaking secrets.
-- For production, consider using a proper WSGI server and securing your API key.
+## 📝 Usage
+
+1. **Upload a file** (PDF, TXT, CSV) for context.
+2. **Ask questions** in the chat box.
+3. **Toggle theme** for light/dark mode.
+4. **Clear chat** to reset conversation.
+
+---
+
+## 📦 Requirements
+
+- Python 3.8+
+- Flask
+- requests
+- python-dotenv
+- PyPDF2
+- pandas
+
+See `requirements.txt` for details.
+
+---
+
+## 🌐 Deployment
+
+- For production, use a WSGI server (e.g., Gunicorn) and secure your API key.
+- `.env` is ignored by `.gitignore` for safety.
+
+---
+
+## 📄 License & Credits
+
+- Built by [kumarBisho](https://github.com/kumarBisho)
+- Powered by [Groq API](https://groq.com/)
+- UI inspired by modern chat apps
+
+---
+
+<p align="center"><sub>Made with ❤️ using Flask & Groq</sub></p>
