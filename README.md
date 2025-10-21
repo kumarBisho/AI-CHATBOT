@@ -1,6 +1,9 @@
 
-[**🟢 Live Demo**](https://ai-chatbot-1-0.onrender.com/)
-[![Groq Chatbot Banner](assets/input_ui_part1.png)](assets/input_ui_part1.png)
+## Live Demo
+
+[Click here to try the chatbot live](https://ai-chatbot-1-0.onrender.com/)
+
+This is a small Flask app that forwards chat messages to the Groq API.
 
 # Groq AI Chatbot
 
